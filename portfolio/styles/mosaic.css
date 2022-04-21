@@ -1,0 +1,38 @@
+/* add grid styles here */
+.portfolio{
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(8,1fr);
+    grid-template-columns: repeat(5,1fr);
+    gap: 1em;
+}
+.portfolio-item{
+    background: red;
+    color: lightgray;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    transition: all ease-in-out 300ms;
+}
+.portfolio-item.small{
+    grid-row: span 1;
+    grid-column: span 1;
+}
+.portfolio-item.medium{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.portfolio-item.large{
+    grid-row: span 3;
+    grid-column: span 3;
+}
+.portfolio-item.tall{
+    grid-row: span 3;
+    grid-column: span 2;
+}
+.portfolio-item.wide{
+    grid-row: span 2;
+    grid-column: span 3;
+}
